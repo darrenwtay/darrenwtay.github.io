@@ -1,0 +1,27 @@
+title: "Darren Tay"
+author: "Darren Tay"
+description: "Aspiring Data Scientist"
+more: "read more »"
+url: "https://darrenwtay.github.io/"
+baseurl: "/"
+paginate: 2
+permalink: pretty
+excerpt_separator: "\n\n\n" # two blank lines
+
+style:
+  minimalist: False
+  dark: False
+
+navigation:
+  - index.html
+  - archive.html
+  - about.md
+
+links: # see http://fontawesome.io/icons/#brand for all possible icons
+  - github: "https://github.com/darrenwtay"
+  - linkedin: "https://www.linkedin.com/in/darrenwtay/"
+  - envelope: "mailto:darren.w.tay@gmail.com"
+
+defaults: [{scope: {path: ""}, values: {layout: "default"}}, {scope: {path: "", type: "posts"}, values: {comments: true}}]
+sass: {style: expanded}
+plugins: [jekyll-feed, jekyll-paginate]
