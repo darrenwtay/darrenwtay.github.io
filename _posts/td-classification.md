@@ -4,7 +4,7 @@ categories: objects
 ---
 
 <div style="text-align: center">
-  <img src="https://github.com/darrenwtay/darrenwtay.github.io/blob/master/images/TD-Classification/analysis-and-data.png?raw=true">
+  <img src="https://github.com/darrenwtay/darrenwtay.github.io/blob/master/images/analysis-and-data.png?raw=true">
   <p style="font-size:12px">(Image Source: IMS Marketing)</p>
 </div>
 
