@@ -14,8 +14,6 @@ style:
 
 navigation:
   - index.html
-  - archive.html
-  - about.md
 
 links: # see http://fontawesome.io/icons/#brand for all possible icons
   - github: "https://github.com/darrenwtay"
