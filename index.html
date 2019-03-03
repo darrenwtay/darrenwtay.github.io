@@ -1,26 +1,80 @@
----
-title: "Home"
-layout: blank
----
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="author" content="Elroy Goh">
+<meta name="description" content="Aspiring Data Scientist - MSc Investment and Wealth Management Graduate">
+<title> Home › Elroy Goh</title>
+<link rel="canonical" href="https://elroyggj.github.io//">
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="/basic.css" rel="stylesheet">
+<link href="/highlight.css" rel="stylesheet">
+<link href="/index.css" rel="stylesheet">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130120817-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130120817-1');
+  </script>
+</head>
+
+<link type="application/atom+xml" rel="alternate" href="https://elroyggj.github.io//feed.xml" title="Elroy Goh" />
+
+
+<header>
+  <h1><a href="">Elroy Goh</a></h1>
+  <h2><a>Aspiring Data Scientist - MSc Investment and Wealth Management Graduate</a></h2>
+  <nav>
+    <div><a href="/">Home</a><a href="/archive/">Archive</a><a href="/about/">About</a></div>
+    <div><a href="https://github.com/elroyggj"><i class="fa fa-github"></i></a><a href="https://www.linkedin.com/in/gjgoh/"><i class="fa fa-linkedin"></i></a><a href="mailto:elroy.ggj@gmail.com"><i class="fa fa-envelope"></i></a></div>
+  </nav>
+</header>
 <main>
-  {% for page in paginator.posts %}
+  
   <article>
     <header>
-      <h1><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h1>
-      <h2><a>{{ page.description }}</a></h2>
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      <h1><a href="/objects/2018/12/19/HDB-Price-Prediction/">HDB Price Prediction (WIP)</a></h1>
+      <h2><a></a></h2>
+      <time datetime="2018-12-19T22:00:00+00:00">December 19, 2018</time>
     </header>
-{{ page.excerpt }}
-    {% unless page.excerpt == page.content %}
-    <footer><a class="ghost" href="{{ page.url | prepend: site.baseurl }}">{{ site.more }}</a></footer>
-    {% endunless %}
+<div style="text-align: center">
+  <img src="https://github.com/elroyggj/elroyggj.github.io/blob/master/img/2018-12-19-HDB-Price-Prediction/HDB.jpg?raw=true" />
+</div>
+
+<p>The HDB Resale Price dataset contains information on 785,798 HDB flats that were resold between January 1990 and October 2018. The <a href="https://data.gov.sg/dataset/resale-flat-prices">dataset</a> was compiled by the Singapore Government and is frequently being updated. The purpose of this project is to utilise regression techniques to understand what are the main drivers of HDB prices.</p>
+
+<p>Links to <a href="https://docs.google.com/presentation/d/1HFxt_fcyKHO-GdH7W6ifuvpKSbRx1lfITJHMhIYzXyg/edit?usp=sharing">Google Slides</a> and <a href="https://github.com/elroyggj/HDB-Price-Prediction">Github Repository</a> are available.</p>
+
+
+    
+    <footer><a class="ghost" href="/objects/2018/12/19/HDB-Price-Prediction/">read more »</a></footer>
+    
   </article>
-{% endfor %}
+
+  <article>
+    <header>
+      <h1><a href="/objects/2018/11/29/donorschoose-recommender/">Recommender System for DonorsChoose.org</a></h1>
+      <h2><a></a></h2>
+      <time datetime="2018-11-29T22:00:00+00:00">November 29, 2018</time>
+    </header>
+<div style="text-align: center">
+  <img src="https://github.com/elroyggj/elroyggj.github.io/blob/master/img/2018-11-29-DonorsChoose/recommender_system.png?raw=true" />
+  <p style="font-size:12px">(Image Source: mita.gov.mt)</p>
+</div>
+
+<p>According to <a href="https://www.donorschoose.org">DonorsChoose.org</a>, many classrooms in the US do not have sufficient funds to allow their students to learn effectively. Consequently, many teachers end up forking out their own money to fund classroom activities. In order to manage and resolve this predicament, DonorsChoose.org was set up as a platform for schools and teachers to reach out to the general populace to seek fundings.</p>
+
+<p>The organisation provides rich anonymised <a href="https://www.kaggle.com/donorschoose/io">datasets</a> (2012-2018) on Kaggle and invites the community to help them pair up donation projects to existing and new donors alike. The winning solution will be implemented in email campaigns.</p>
+
+
+    
+    <footer><a class="ghost" href="/objects/2018/11/29/donorschoose-recommender/">read more »</a></footer>
+    
+  </article>
+
 </main>
-{% if paginator.total_pages > 1 %}
-<footer>
-    <a {% if paginator.previous_page %} class="gray" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" {% else %} class="disabled" {% endif %}>« newer posts</a>
-    <span class="paginate">page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    <a {% if paginator.next_page %} class="gray" href="{{ paginator.next_page_path | prepend: site.baseurl }}" {% else %} class="disabled" {% endif %}>older posts »</a>
-</footer>
-{% endif %}
